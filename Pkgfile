@@ -1,0 +1,17 @@
+# syntax = ghcr.io/siderolabs/bldr:v0.4.1
+
+format: v1alpha2
+
+vars:
+  # renovate: datasource=github-tags depName=raspberrypi/firmware
+  raspberrypi_firmware_version: 1.20250430
+  raspberrypi_firmware_sha256: 69e41ec5ecae7054dfeb307380d03ce4d7ac3e6049b9dfb285ab1ebef8cf04d6
+  raspberrypi_firmware_sha512: 3fa11d97dbb5c504c4f85ffcb5ac33f73d4d6d9c0dad67eaae1d5f734d4b096e7add29d42ba8de254fe242d81ca4c053a8df1482d069700014915ef80b7b3036
+
+  # renovate: datasource=github-tags depName=talos-rpi5/u-boot
+  uboot_version: v2025.04-rpi5
+  uboot_sha256: 3205d0c482c841215798b68adf1db978731db8e48e2d8caadd5fadae8d05ec7b
+  uboot_sha512: 99ae2ef5451c9d0438b88bf86d2302832c4e07bc857db6332b10057fc81c44b5ae871c2e4db1d1f75755c7dd1c51c1728763cb5d3678ae3b4c47b50a07a6e998
+
+labels:
+  org.opencontainers.image.source: https://github.com/talos-rpi5/sbc-raspberrypi5

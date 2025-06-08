@@ -1,0 +1,35 @@
+---
+kind: pkgfile.Build
+spec:
+  targets:
+    - sbc-raspberrypi5
+  extraBuildArgs:
+    - PKGS_PREFIX
+    - PKGS
+    - TOOLS_PREFIX
+    - TOOLS
+  makefile:
+    extraVariables:
+      - name: PKGS_PREFIX
+        defaultValue: ghcr.io/siderolabs
+      - name: PKGS
+        defaultValue: v1.10.0
+      - name: TOOLS_PREFIX
+        defaultValue: ghcr.io/siderolabs
+      - name: TOOLS
+        defaultValue: v1.10.0
+---
+kind: common.Build
+spec:
+  ignoredPaths:
+    - go.work.sum
+---
+kind: common.Renovate
+spec:
+  packageRules:
+    - matchPackageNames:
+        - talos-rpi5/u-boot
+      versioning: 'regex:^(?<major>\d+)\.(?<minor>\d+)\.?(?<patch>\d+)?$'
+    - matchPackageNames:
+        - raspberrypi/firmware
+      versioning: 'regex:^\d+\.(?<major>\d{4})(?<minor>\d{2})(?<patch>\d{2})$'

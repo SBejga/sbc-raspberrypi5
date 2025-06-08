@@ -1,0 +1,11 @@
+name: sbc-raspberrypi5
+variant: scratch
+dependencies:
+  - stage: rpi5
+  - stage: raspberrypi-firmware
+  - stage: u-boot
+    platform: linux/arm64
+  - stage: profiles
+finalize:
+  - from: /rootfs
+    to: /
