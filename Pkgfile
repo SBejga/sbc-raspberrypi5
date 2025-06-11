@@ -9,9 +9,9 @@ vars:
   raspberrypi_firmware_sha512: 3fa11d97dbb5c504c4f85ffcb5ac33f73d4d6d9c0dad67eaae1d5f734d4b096e7add29d42ba8de254fe242d81ca4c053a8df1482d069700014915ef80b7b3036
 
   # renovate: datasource=github-tags depName=talos-rpi5/u-boot
-  uboot_version: v2025.04-rpi5
-  uboot_sha256: 3205d0c482c841215798b68adf1db978731db8e48e2d8caadd5fadae8d05ec7b
-  uboot_sha512: 99ae2ef5451c9d0438b88bf86d2302832c4e07bc857db6332b10057fc81c44b5ae871c2e4db1d1f75755c7dd1c51c1728763cb5d3678ae3b4c47b50a07a6e998
+  uboot_version: v2025.04-rpi5-2
+  uboot_sha256: 31c24165d25b3313abf5f82ae70a281a23fb9e30bcc4c86c14f692037b47f9d7
+  uboot_sha512: 6b1543d1968efc1a93ba7eee82441c266fdffc8cdff77e4c1578fce11b78a189c0281024018e1e2b8812ea92a460d8d4237279dd2a002ca6a753aac0b0a95feb
 
 labels:
   org.opencontainers.image.source: https://github.com/talos-rpi5/sbc-raspberrypi5
