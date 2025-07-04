@@ -18,3 +18,5 @@ dtoverlay=disable-bt
 # Disable Wireless Lan.
 dtoverlay=disable-wifi
 dtoverlay=w1-gpio,gpiopin=26
+dtparam=spi=on
+dtparam=i2c_arm=on
